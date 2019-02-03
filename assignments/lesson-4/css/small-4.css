@@ -1,0 +1,28 @@
+@font-face {
+    font-family: BebasNeue-Book;
+    src: url(./fonts/BebasNeue/BebasNeue-Book.ttf);
+}
+
+h1, h3, div.motto {
+    font-family: 'Merriweather', BebasNeue-Book
+}
+
+body {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+.redbox {
+    background-color: red;
+}
+
+header {
+    margin: 10px auto;
+    background-color: #fff;
+    text-align: center;
+}
+
+header img, .headings {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
