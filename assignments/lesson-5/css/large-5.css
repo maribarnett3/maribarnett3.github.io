@@ -1,0 +1,39 @@
+/* applies if screen size greater than 400 */
+
+.forecast {
+    display: inherit;
+}
+
+.table {
+    border-radius: 5px;
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+    text-align: center;
+}
+
+img[alt="girl with shake in the snow"]{
+    /* max-width: 100%; */
+    padding-top: 20px;
+}
+
+header img, .headings > h1{
+    font-size: 39px;
+}
+
+header img, .headings > div{
+    font-size: 15px;
+}
+
+img[alt="The world logo"]{
+    width: auto;
+}
+
+.page-footer{
+    margin: 60px;
+}
+
+.article-section {
+    margin-left: 40px;
+    margin-right: 40px
+}
