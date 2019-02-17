@@ -21,6 +21,10 @@ header {
     text-align: center;
 }
 
+img[alt='hero image']{
+    width: 100%
+}
+
 /* .navbar-brand {
     float:none;
 } */
