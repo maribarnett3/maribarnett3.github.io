@@ -3,14 +3,20 @@
     src: url(./fonts/BebasNeue/BebasNeue-Book.ttf);
 }
 
+.navbar > .container-fluid{
+    display: flex;
+	flex-direction: column;
+}
+
 .gallery-section > div > div:hover{
     box-shadow: 0 0 50px #333;
 }
+
+
 .gallery-section > div > div{
-    /* margin: 5px; */
-    /* margin-top: 20px; */
     margin-bottom: 20px;
-	border: 1px solid #bbb;
+    border: 1px solid #bbb;
+    display: inline-grid;
 }
 
 .gallery-section{
