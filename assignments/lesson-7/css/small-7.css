@@ -3,6 +3,10 @@
     src: url(./fonts/BebasNeue/BebasNeue-Book.ttf);
 }
 
+.gallery-section > div > img{
+
+}
+
 h1, h3, h4, h5, div.motto {
     font-family: 'Merriweather', BebasNeue-Book
 }
