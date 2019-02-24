@@ -1,2 +1,6 @@
 /* applies if screen size greater than 400 and less than 759 */
 
+.gallery-section{
+    padding-left: 60px;
+    padding-right: 60px;
+}

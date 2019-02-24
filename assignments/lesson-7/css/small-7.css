@@ -3,8 +3,19 @@
     src: url(./fonts/BebasNeue/BebasNeue-Book.ttf);
 }
 
-.gallery-section > div > img{
+.gallery-section > div > div:hover{
+    box-shadow: 0 0 50px #333;
+}
+.gallery-section > div > div{
+    /* margin: 5px; */
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+	border: 1px solid #bbb;
+}
 
+.gallery-section{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h1, h3, h4, h5, div.motto {
