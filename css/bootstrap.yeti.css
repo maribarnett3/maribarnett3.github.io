@@ -5375,8 +5375,8 @@ button.list-group-item-danger.active:focus {
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
-  border-top-left-radius: -1 5%;
-  border-top-right-radius: -1 5%;
+  border-top-left-radius: -1 0;
+  border-top-right-radius: -1 0;
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
