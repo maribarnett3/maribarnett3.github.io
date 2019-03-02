@@ -29,6 +29,15 @@ thead>tr, tfoot>tr {
     background-color: #7fb9c2;
 }
 
+thead {
+    font-size: 2.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 td {
     text-align: center;
 }
