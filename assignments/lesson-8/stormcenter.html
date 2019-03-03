@@ -108,15 +108,15 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-6 col-form-label text-right" for="date"> Storm Date</label>
+                    <label class="col-sm-6 col-form-label text-right" for="dateinput"> Storm Date</label>
                     <div class="col-sm-6 text-left">
-                        <input type="date" name="stormdate" id="date">
+                        <input type="date" name="stormdate" id="dateinput">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-6 col-form-label text-right" for="stormtype"> Storm Type </label>
+                    <label class="col-sm-6 col-form-label text-right" for="stormtypeList"> Storm Type </label>
                     <div class="col-sm-6 text-left">
-                        <input type="list" id="stormtype" name="stormtype">
+                        <input list="stormtype" name="stormtype" id="stormtypeList">
                         <datalist id="stormtype">
                             <option value="Flash Flood"></option>
                             <option value="Hail"></option>
@@ -151,25 +151,31 @@
                     <div class="col-sm-3">
                         <div class="form-check">
                             <div class="col-sm-6 col-lg-2 text-right">
-                                <input type="radio" class="form-check-input" name="userin-dangerlevel" for="userin-dangerlevel-1" value="yes">
+                                <input type="radio" class="form-check-input" name="userin-dangerlevel"
+                                    id="userin-dangerlevel-1" value="yes">
                             </div>
-                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left" id="userin-dangerlevel-1">
+                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left"
+                                for="userin-dangerlevel-1">
                                 yes
                             </label>
                         </div>
                         <div class="form-check">
                             <div class="col-sm-6 col-lg-2 text-right">
-                                <input type="radio" class="form-check-input" name="userin-dangerlevel"  for="userin-dangerlevel-2" value="no">
+                                <input type="radio" class="form-check-input" name="userin-dangerlevel"
+                                    id="userin-dangerlevel-2" value="no">
                             </div>
-                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left" id="userin-dangerlevel-2">
+                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left"
+                                for="userin-dangerlevel-2">
                                 no
                             </label>
                         </div>
                         <div class="form-check">
                             <div class="col-sm-6 col-lg-2 text-right">
-                                <input type="radio" class="form-check-input" name="userin-dangerlevel" for="userin-dangerlevel-3" value="maybe">
+                                <input type="radio" class="form-check-input" name="userin-dangerlevel"
+                                    id="userin-dangerlevel-3" value="maybe">
                             </div>
-                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left" id="userin-dangerlevel-3">
+                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left"
+                                for="userin-dangerlevel-3">
                                 maybe
                             </label>
                         </div>
@@ -179,7 +185,7 @@
                 <div class="form-group row">
                     <label class="col-sm-6 col-form-label text-right" for="comments">Comments</label>
                     <div class="col-sm-6 text-left">
-                        <textarea name="comments" rows="5" cols="33"  id="comments">
+                        <textarea name="comments" rows="5" cols="33" id="comments">
     It was a dark and stormy night...
                     </textarea>
                     </div>
