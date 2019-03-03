@@ -199,3 +199,9 @@ img[alt="girl with shake in the snow"]{
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  @media (max-width: 767px) {
+    .text-right { text-align:center }
+    .text-left { text-align:center }
+
+}

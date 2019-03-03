@@ -84,38 +84,38 @@
         <div class="col-sm-12 text-center">
             <form action="">
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" for="fullname"> Full name</label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-6 col-form-label text-right" for="fullname"> Full name</label>
+                    <div class="col-sm-6 text-left">
                         <input type="text" name="fullname" required pattern="[A-Za-z]{5}">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" for="email"> Email</label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-6 col-form-label text-right" for="email"> Email</label>
+                    <div class="col-sm-6 text-left">
                         <input type="email" name="email" placeholder="bobdylan@gmail.com">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" for="tel"> Phone Number</label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-6 col-form-label text-right" for="tel"> Phone Number</label>
+                    <div class="col-sm-6 text-left">
                         <input type="tel" name="phonenumber" required>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" for="number"> Zip code</label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-6 col-form-label text-right" for="number"> Zip code</label>
+                    <div class="col-sm-6 text-left">
                         <input type="number" name="zipcode" required>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" for="date"> Storm Date</label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-6 col-form-label text-right" for="date"> Storm Date</label>
+                    <div class="col-sm-6 text-left">
                         <input type="date" name="stormdate">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" for="stormtype"> Storm Type </label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-6 col-form-label text-right" for="stormtype"> Storm Type </label>
+                    <div class="col-sm-6 text-left">
                         <input type="list" id="stormtype" name="stormtype">
                         <datalist id="stormtype">
                             <option value="Flash Flood"></option>
@@ -128,25 +128,27 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" for="range">Storm Severity</label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-6 col-form-label text-right" for="range">Storm Severity</label>
+                    <div class="col-sm-6 text-left">
                         <input type="rage" name="stormseverity" min="1" max="10" step="1">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" for="stormregion"> Storm Region
+                    <label class="col-sm-6 col-form-label text-right" for="stormregion"> Storm Region
                     </label>
-                    <select name="stormregion" id="stormregion">
-                        <option value="" disabled>Select a Region</option>
-                        <option value="Preston">Preston</option>
-                        <option value="Soda Springs">Soda Springs</option>
-                        <option value="Fish Haven">Fish Haven</option>
-                    </select>
+                    <div class="col-sm-6 text-left">
+                        <select name="stormregion" id="stormregion">
+                            <option value="" disabled>Select a Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" for="userin-dangerlevel">User
+                    <label class="col-sm-6 col-form-label text-right" for="userin-dangerlevel">User
                         in-danger level</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-3">
                         <div class="form-check">
                             <div class="col-sm-6 text-right">
                                 <input type="radio" class="form-check-input" name="userin-dangerlevel" value="yes">
@@ -175,10 +177,12 @@
                 </div>
 
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label" for="comments">Comments</label>
-                    <textarea name="comments" rows="5" cols="33">
+                    <label class="col-sm-6 col-form-label text-right" for="comments">Comments</label>
+                    <div class="col-sm-6 text-left">
+                        <textarea name="comments" rows="5" cols="33">
     It was a dark and stormy night...
                     </textarea>
+                    </div>
                 </div>
                 <div class="form-group row text-center">
                     <div class="col-sm-12">
