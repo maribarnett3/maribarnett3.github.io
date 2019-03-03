@@ -12,8 +12,10 @@
 <body>
     <header>
         <picture>
-            <source media="(min-width: 650px)" srcset="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png">
-            <source media="(min-width: 465px)" srcset="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png">
+            <source media="(min-width: 650px)"
+                srcset="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png">
+            <source media="(min-width: 465px)"
+                srcset="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png">
             <img src="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png"
                 alt="The world logo">
             <!-- <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"> -->
@@ -81,48 +83,113 @@
 
         <div class="col-sm-12 text-center">
             <form action="">
-                <label for="fullname"> Full name</label> <br>
-                <input type="text" name="fullname" required pattern="[A-Za-z]{5}"> <br>
-                <label for="email"> Email</label>
-                <input type="email" name="email" placeholder="bobdylan@gmail.com"> <br>
-                <label for="tel"> Phone Number</label>
-                <input type="tel" name="phonenumber" required> <br>
-                <label for="number"> Zip code</label>
-                <input type="number" name="zipcode" required> <br>
-                <label for="date"> Storm Date</label>
-                <input type="date" name="stormdate"> <br>
-                <label for="stormtype"> Storm Type </label>
-                <input type="list" id="stormtype" name="stormtype"> <br>
-                <datalist id="stormtype">
-                    <option value="Flash Flood"></option>
-                    <option value="Hail"></option>
-                    <option value="Hurricane"></option>
-                    <option value="Thunderstorm"></option>
-                    <option value="Tornado"></option>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="fullname"> Full name</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="fullname" required pattern="[A-Za-z]{5}">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="email"> Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" name="email" placeholder="bobdylan@gmail.com">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="tel"> Phone Number</label>
+                    <div class="col-sm-10">
+                        <input type="tel" name="phonenumber" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="number"> Zip code</label>
+                    <div class="col-sm-10">
+                        <input type="number" name="zipcode" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="date"> Storm Date</label>
+                    <div class="col-sm-10">
+                        <input type="date" name="stormdate">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="stormtype"> Storm Type </label>
+                    <div class="col-sm-10">
+                        <input type="list" id="stormtype" name="stormtype">
+                        <datalist id="stormtype">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
 
-                </datalist>
-                <label for="range">Storm Severity</label> <br>
-                <input type="rage" name="stormseverity" min="1" max="10" step="1">
-                <label for="stormregion"> Storm Region </label>
-                <select name="stormregion" id="stormregion">
-                    <option value="" disabled>Select a Region</option>
-                    <option value="Preston">Preston</option>
-                    <option value="Soda Springs">Soda Springs</option>
-                    <option value="Fish Haven">Fish Haven</option>
-                </select>
-                <label for="userin-dangerlevel">User in-danger level</label>
-                <input type="radio" name="userin-dangerlevel" value="yes">
-                <input type="radio" name="userin-dangerlevel" value="no">
-                <input type="radio" name="userin-dangerlevel" value="maybe">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="range">Storm Severity</label>
+                    <div class="col-sm-10">
+                        <input type="rage" name="stormseverity" min="1" max="10" step="1">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="stormregion"> Storm Region
+                    </label>
+                    <select name="stormregion" id="stormregion">
+                        <option value="" disabled>Select a Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="userin-dangerlevel">User
+                        in-danger level</label>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <div class="col-sm-6 text-right">
+                                <input type="radio" class="form-check-input" name="userin-dangerlevel" value="yes">
+                            </div>
+                            <label class="form-check-label col-sm-6 col-form-label text-left" for="userin-dangerlevel">
+                                yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <div class="col-sm-6 text-right">
+                                <input type="radio" class="form-check-input" name="userin-dangerlevel" value="no">
+                            </div>
+                            <label class="form-check-label col-sm-6 col-form-label text-left" for="userin-dangerlevel">
+                                no
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <div class="col-sm-6 text-right">
+                                <input type="radio" class="form-check-input" name="userin-dangerlevel" value="maybe">
+                            </div>
+                            <label class="form-check-label col-sm-6 col-form-label text-left" for="userin-dangerlevel">
+                                maybe
+                            </label>
+                        </div>
+                    </div>
+                </div>
 
-                <label for="comments">Comments</label>
-                <textarea name="comments" rows="5" cols="33">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="comments">Comments</label>
+                    <textarea name="comments" rows="5" cols="33">
     It was a dark and stormy night...
                     </textarea>
-                <input type="submit" name="form submission button">
+                </div>
+                <div class="form-group row text-center">
+                    <div class="col-sm-12">
+                        <input type="submit" class="btn btn-primary" name="form submission button">
+                    </div>
+                </div>
             </form>
         </div>
-        <!-- <div class="col-sm-6 col-sm-pull-6">
+
+    </div>
+    <!-- <div class="col-sm-6 col-sm-pull-6">
 
         </div> -->
     </div>
@@ -148,7 +215,8 @@
                 <div class="col-md-12 mt-md-0 mt-3">
 
                     <h5 class="text-uppercase">Contact us</h5>
-                    <p><a href="mailto:support@whatsinthesky.net?Subject=Contact" target="_top">support@whatsinthesky.net</a></p>
+                    <p><a href="mailto:support@whatsinthesky.net?Subject=Contact"
+                            target="_top">support@whatsinthesky.net</a></p>
 
                 </div>
 
