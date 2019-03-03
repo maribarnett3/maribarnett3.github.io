@@ -203,5 +203,8 @@ img[alt="girl with shake in the snow"]{
   @media (max-width: 767px) {
     .text-right { text-align:center }
     .text-left { text-align:center }
-
+    div.range-col{
+        padding-left:50px; 
+        padding-right:50px;
+    }
 }
