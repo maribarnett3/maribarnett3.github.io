@@ -86,31 +86,31 @@
                 <div class="form-group row">
                     <label class="col-sm-6 col-form-label text-right" for="fullname"> Full name</label>
                     <div class="col-sm-6 text-left">
-                        <input type="text" name="fullname" required pattern="[A-Za-z]{5,}">
+                        <input type="text" name="fullname" id="fullname" required pattern="[A-Za-z]{5,}">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-6 col-form-label text-right" for="email"> Email</label>
                     <div class="col-sm-6 text-left">
-                        <input type="email" name="email" placeholder="bobdylan@gmail.com">
+                        <input type="email" name="email" id="email" placeholder="bobdylan@gmail.com">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-6 col-form-label text-right" for="tel"> Phone Number</label>
                     <div class="col-sm-6 text-left">
-                        <input type="tel" name="phonenumber" required>
+                        <input type="tel" name="phonenumber" id="tel" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-6 col-form-label text-right" for="number"> Zip code</label>
                     <div class="col-sm-6 text-left">
-                        <input type="number" name="zipcode" required>
+                        <input type="number" name="zipcode" id="number" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-6 col-form-label text-right" for="date"> Storm Date</label>
                     <div class="col-sm-6 text-left">
-                        <input type="date" name="stormdate">
+                        <input type="date" name="stormdate" id="date">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -130,7 +130,7 @@
                 <div class="form-group row">
                     <label class="col-sm-6 col-form-label text-right" for="range">Storm Severity</label>
                     <div class="col-sm-3 col-lg-2 text-left range-col">
-                        <input type="range" name="stormseverity" min="1" max="10" step="1">
+                        <input type="range" name="stormseverity" id="range" min="1" max="10" step="1">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -146,30 +146,30 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-6 col-form-label text-right" for="userin-dangerlevel">User
+                    <label class="col-sm-6 col-form-label text-right">User
                         in-danger level</label>
                     <div class="col-sm-3">
                         <div class="form-check">
                             <div class="col-sm-6 col-lg-2 text-right">
-                                <input type="radio" class="form-check-input" name="userin-dangerlevel" value="yes">
+                                <input type="radio" class="form-check-input" name="userin-dangerlevel" for="userin-dangerlevel-1" value="yes">
                             </div>
-                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left" for="userin-dangerlevel">
+                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left" id="userin-dangerlevel-1">
                                 yes
                             </label>
                         </div>
                         <div class="form-check">
                             <div class="col-sm-6 col-lg-2 text-right">
-                                <input type="radio" class="form-check-input" name="userin-dangerlevel" value="no">
+                                <input type="radio" class="form-check-input" name="userin-dangerlevel"  for="userin-dangerlevel-2" value="no">
                             </div>
-                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left" for="userin-dangerlevel">
+                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left" id="userin-dangerlevel-2">
                                 no
                             </label>
                         </div>
                         <div class="form-check">
                             <div class="col-sm-6 col-lg-2 text-right">
-                                <input type="radio" class="form-check-input" name="userin-dangerlevel" value="maybe">
+                                <input type="radio" class="form-check-input" name="userin-dangerlevel" for="userin-dangerlevel-3" value="maybe">
                             </div>
-                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left" for="userin-dangerlevel">
+                            <label class="form-check-label col-sm-6 col-lg-10 col-form-label text-left" id="userin-dangerlevel-3">
                                 maybe
                             </label>
                         </div>
@@ -179,7 +179,7 @@
                 <div class="form-group row">
                     <label class="col-sm-6 col-form-label text-right" for="comments">Comments</label>
                     <div class="col-sm-6 text-left">
-                        <textarea name="comments" rows="5" cols="33">
+                        <textarea name="comments" rows="5" cols="33"  id="comments">
     It was a dark and stormy night...
                     </textarea>
                     </div>
