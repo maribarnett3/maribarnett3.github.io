@@ -8,15 +8,23 @@
 	flex-direction: column;
 }
 
-.gallery-section > div > div:hover{
+.gallery-section > div > div:hover, .towns > div:hover{
     box-shadow: 0 0 50px #333;
 }
 
 
-.gallery-section > div > div{
+.gallery-section > div > div, .towns > div{
     margin-bottom: 20px;
     border: 1px solid #bbb;
     display: inline-grid;
+}
+
+.towns img {
+    max-height: 272px;
+}
+
+.towns > div {
+padding-bottom: 20px
 }
 
 .gallery-section{
@@ -131,6 +139,8 @@ img[alt="girl with shake in the snow"]{
 
 .article-section {
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: orange;
 }
 
