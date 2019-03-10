@@ -42,7 +42,9 @@ header {
     text-align: center;
 }
 
-img[alt='hero image']{
+img[alt='hero image'],
+.towns img
+{
     width: 100%
 }
 
