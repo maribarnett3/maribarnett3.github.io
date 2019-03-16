@@ -10,8 +10,16 @@ request.send();
 
 request.onload = function () {
     var towns = request.response;
+    if(townName){
+
+    } else{
     populateTowns(towns);
+    }
     // populateEvents(towns);
+}
+
+function popEvents(town){
+    
 }
 
 function populateTowns(jsonObj) {
