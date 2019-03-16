@@ -14,7 +14,6 @@ function requestData(requestURL, type) {
 
     request.onload = function () {
         var weatherData = request.response;
-        console.log(weatherData)
         if (type == 'weather') {
             summary(weatherData);
         } else {
