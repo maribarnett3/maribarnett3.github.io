@@ -3,6 +3,8 @@ var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 var request = new XMLHttpRequest();
 
+var townName = townName || null;
+
 request.open('GET', requestURL);
 
 request.responseType = 'json';
@@ -10,16 +12,26 @@ request.send();
 
 request.onload = function () {
     var towns = request.response;
-    if(townName){
-
-    } else{
-    populateTowns(towns);
+    if (townName) {
+        var town = towns.towns.findIndex(function(x){
+            return x.name==townName
+        })
+        popEvents(towns.towns[town])
+    } else {
+        populateTowns(towns);
     }
-    // populateEvents(towns);
 }
 
-function popEvents(town){
-    
+function popEvents(town) {
+    var innerHTML = "<ul>"
+
+    for (let i = 0; i < town.events.length; i++) {
+        innerHTML+=`<li>`
+        innerHTML+=town.events[i]
+        innerHTML+=`</li>`
+    }
+    innerHTML+=`</ul>`
+    document.getElementById(town.name + "-Events").innerHTML = innerHTML
 }
 
 function populateTowns(jsonObj) {
@@ -32,10 +44,10 @@ function populateTowns(jsonObj) {
         if (currTowns.indexOf(townName) != -1) {
             // console.log(town)
             document.getElementById(townName + "-town").innerText = town.name
-            document.getElementById(townName + "-motto").innerHTML = `<strong><em>`+town.motto+`</em></strong>`
-            document.getElementById(townName + "-yearFounded").innerHTML = `<strong>Year Founded: </strong>`+town.yearFounded
-            document.getElementById(townName + "-currentPopulation").innerHTML = `<p><strong>Population: </strong>`+town.currentPopulation
-            document.getElementById(townName + "-averageRainfall").innerHTML = `<strong>Annual Rain Fall: </strong>`+town.averageRainfall+`"`
+            document.getElementById(townName + "-motto").innerHTML = `<strong><em>` + town.motto + `</em></strong>`
+            document.getElementById(townName + "-yearFounded").innerHTML = `<strong>Year Founded: </strong>` + town.yearFounded
+            document.getElementById(townName + "-currentPopulation").innerHTML = `<p><strong>Population: </strong>` + town.currentPopulation
+            document.getElementById(townName + "-averageRainfall").innerHTML = `<strong>Annual Rain Fall: </strong>` + town.averageRainfall + `"`
         }
 
     }
