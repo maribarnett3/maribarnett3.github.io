@@ -68,7 +68,7 @@ function forecast(jsonObj) {
     }
 
     for (let i = 0; i < forecastsAt18.length; i++) {
-        var innerHTML = `<img src="http://openweathermap.org/img/w/` + forecastsAt18[i].weather[0].icon + `.png" alt="` + forecastsAt18[i].weather[0].description + `" width="50">` + forecastsAt18[i].main.temp + `&#176;`
+        var innerHTML = `<img src="https://openweathermap.org/img/w/` + forecastsAt18[i].weather[0].icon + `.png" alt="` + forecastsAt18[i].weather[0].description + `" width="50">` + forecastsAt18[i].main.temp + `&#176;`
         document.getElementById('f' + i).innerHTML = innerHTML
         document.getElementById('f' + i + 'd').innerText = forecastsAt18[i].weekday
     }
