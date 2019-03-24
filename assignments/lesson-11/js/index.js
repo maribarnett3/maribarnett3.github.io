@@ -31,7 +31,7 @@ function popEvents(town) {
         innerHTML+=`</li>`
     }
     innerHTML+=`</ul>`
-    document.getElementById(town.name + "-Events").innerHTML = innerHTML
+    document.getElementById(town.name.replace(" ","-") + "-Events").innerHTML = innerHTML
 }
 
 function populateTowns(jsonObj) {
